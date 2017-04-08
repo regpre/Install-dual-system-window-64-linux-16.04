@@ -5,4 +5,7 @@
    问题： 我转换完后，Windows 系统进不去了，不得不重新安装系统
 2. 电脑上存在200G的保留分区（可能的问题）
    装Windows系统时，用diskgenius 对磁盘进行了新的分区（格式化了保留分区），并且留下了200G的未分配空间用来装Linux系统。
-   
+3. 装Ubuntu最后一步初始化时，出现报错： Sorry，Ubuntu 16.04 has experienced an internal error.
+   解决办法： 拔掉网线就可以了。
+4. 选择Ubuntu初始化类型时通常选择something else ：
+   自己设置分区/(30G),swap(交换空间)(>=2倍内存大小,20G),/boot(引导区)(300M),/home(剩余的空间)
