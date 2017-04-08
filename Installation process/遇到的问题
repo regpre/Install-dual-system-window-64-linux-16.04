@@ -9,3 +9,7 @@
    解决办法： 拔掉网线就可以了。
 4. 选择Ubuntu初始化类型时通常选择something else ：
    自己设置分区/(30G),swap(交换空间)(>=2倍内存大小,20G),/boot(引导区)(300M),/home(剩余的空间)
+   注意：（1）分割空闲分区的上述文件全部设置成逻辑类型（logic），不要将/设置成主分区，否则，设置两个文件后，剩余的free空间将不能分配
+        （2）下面的 device for boot loader installation : 一定要选择/boot所对应的位置，有Windows引导 Ubuntu启动。
+ 5. 安装完成后，重启，发现没有Ubuntu选择按钮，可以通过软件EasyBCD 创建Ubuntu 引导程序
+    添加新条目--操作系统（Linux/BCD）--类型（默认），名称（可以写为Ubuntu），驱动器选择/boot 所在的分区--点击添加条目
